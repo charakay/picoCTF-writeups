@@ -89,7 +89,11 @@ disk.flag.img  flag.txt.enc
 openssl aes256 -salt -out flagDecrypted.txt -in flag.txt.enc -k unbreakablepassword1234567 -d
 ```
 <br>
-It will show as bad decrypt, but still we find the flag by`cat flagDecrypted.txt`
+It will show as bad decrypt, but still we find the flag by <br>
+
+```
+cat flagDecryped.txt
+```
 <details>
   <summary><i>Click to reveal flag</i></summary>
   <b>picoCTF{h4un71ng_p457_1d02081e}</b>
