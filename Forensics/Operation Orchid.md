@@ -64,6 +64,7 @@ Salted__S�+%���+�O��k�ђ(A����c��
 L�ޢȤ7� ���؎$�'%  `
 ```
 seems as if it has been encrypted, we can observe this through the file extension as well -> file.txt.enc
+
 7. in an earlier CTF in forensics section, we were instructed to check root, so we will check root `fls -o 0000411648 disk.flag.img 472 `
 ```
 r/r 1875:       .ash_history
@@ -77,7 +78,7 @@ This gives us how the .txt.enc has been encrypted.
 ```
 openssl aes256 -salt -in flag.txt -out flag.txt.enc -k unbreakablepassword1234567
 ```
-8. so we need to reverse this. for that, we need to first save the content of the flag.txt.enc. I have save it here as the same name using `icat -o 0000411648 disk.flag.img 1782 > flag.txt.enc`
+8. so we need to decrypt this. for that, we need to first save the content of the flag.txt.enc. I have save it here as the same name using `icat -o 0000411648 disk.flag.img 1782 > flag.txt.enc`
 ```
 ┌──(kali㉿kali)-[~/tmp]
 └─$ ls
