@@ -57,7 +57,7 @@ $ fls -o 0000411648 disk.flag.img -r | grep flag
 + r/r * 1876(realloc):  flag.txt
 + r/r 1782:     flag.txt.enc
 ```
-6. i tried cat flag.txt but nothing interesting there, but flag.txt.enc has something `$ icat -o 0000411648 disk.flag.img 1782
+6. i tried cat flag.txt but nothing interesting there, but flag.txt.enc has something `$ icat -o 0000411648 disk.flag.img 1782`
 ```
 Salted__S�+%���+�O��k�ђ(A����c��
                                 @]ԣ
