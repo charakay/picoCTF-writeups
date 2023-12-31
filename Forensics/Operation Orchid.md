@@ -78,7 +78,7 @@ This gives us how the .txt.enc has been encrypted.
 ```
 openssl aes256 -salt -in flag.txt -out flag.txt.enc -k unbreakablepassword1234567
 ```
-8. so we need to decrypt this. for that, we need to first save the content of the flag.txt.enc. I have save it here as the same name using `icat -o 0000411648 disk.flag.img 1782 > flag.txt.enc`
+8. so we need to decrypt flag.txt.enc. for that, we need to first save the content of the flag.txt.enc. I have save it here as the same name using `icat -o 0000411648 disk.flag.img 1782 > flag.txt.enc`
 ```
 ┌──(kali㉿kali)-[~/tmp]
 └─$ ls
