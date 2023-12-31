@@ -26,7 +26,7 @@ Units are in 512-byte sectors
 <br>
       We can observe few partitions. <br>
 
-4. I will investigate on the first interesting partition which has a sector start with value `0000002048`<br>
+4. I will investigate on the first interesting partition which has a sector start with value `0000411648`<br>
 `fls -o 0000411648 disk.flag.img `
 ```text
 d/d 460:        home
